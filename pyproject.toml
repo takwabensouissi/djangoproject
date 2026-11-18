@@ -1,0 +1,20 @@
+[project]
+name = "monprojet"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "takwa", email = "souissitakwa134@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "django==5.2.*",
+    "requests>=2.34.2",
+]
+
+[project.scripts]
+monprojet = "monprojet:main"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
